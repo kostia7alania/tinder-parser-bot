@@ -1,0 +1,13 @@
+.crx-iframe {
+  border: none;
+  border-radius: 8px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    0 -1px 0px rgba(0, 0, 0, 0.02);
+  background-color: #fff;
+  position: fixed;
+  bottom: 50px;
+  left: 24%;
+  width: 50%;
+  min-height: 420px;
+}
