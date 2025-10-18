@@ -81,13 +81,10 @@ profile-scanner/
 │   ├── components/             # Shared Vue components
 │   │   ├── AppFooter.vue
 │   │   ├── AppHeader.vue
-│   │   ├── DragHandle.vue
-│   │   ├── ResizeHandle.vue
 │   │   ├── ThemeSwitch.vue
 │   │   └── state/              # State components (Loading, Error, etc.)
 │   ├── composables/            # Vue composables (reusable logic)
 │   │   ├── useBrowserStorage.ts
-│   │   ├── useDragAndResize.ts
 │   │   └── useTheme.ts
 │   ├── content-script/         # Content scripts (injected into pages)
 │   │   ├── index.ts
@@ -175,7 +172,6 @@ The project follows FSD architecture principles:
 ### Current Features
 - ✅ Scrape Tinder profiles
 - ✅ Sort by distance
-- ✅ Drag and resize UI components
 - ✅ Theme switching (light/dark)
 - ✅ Multi-language support (en, zh)
 - ✅ Browser storage sync
@@ -288,9 +284,6 @@ npx shadcn-vue@latest add <component>
 Reactive browser storage with TypeScript support:
 - `useBrowserSyncStorage` - Chrome sync storage
 - `useBrowserLocalStorage` - Local storage
-
-### useDragAndResize
-Drag and resize functionality for UI elements
 
 ### useTheme
 Theme management (light/dark mode)
