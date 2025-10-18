@@ -10,3 +10,10 @@ export const usersTableHeaders: TableColumn<User>[] = [
   { header: "I was in..", accessorKey: "currentCity" },
   { header: "Added", accessorKey: "createdAt" },
 ]
+
+export const getSorting = () => [
+  {
+    id: "distance",
+    desc: false,
+  },
+]

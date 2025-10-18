@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="users-table">
     <UTable
       v-model:sorting="sorting"
       sticky
@@ -43,20 +43,14 @@
 </template>
 
 <script setup lang="ts">
-import { TableData } from "@nuxt/ui"
-import { usersTableHeaders } from "../config"
+import { getSorting, usersTableHeaders } from "../config"
 import { useUsersStore } from "../model/users.store"
 
 const { users } = storeToRefs(useUsersStore())
 
-const rows = computed<TableData>(() => users.value as TableData)
+const rows = computed(() => [...users.value])
 
-const sorting = ref([
-  {
-    id: "distance",
-    desc: false,
-  },
-])
+const sorting = ref(getSorting())
 
 const onClickName = async (id: string) => {
   const [tab] = await chrome.tabs.query({
