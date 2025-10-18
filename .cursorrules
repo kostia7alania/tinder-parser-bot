@@ -1,0 +1,41 @@
+# Cursor AI Rules - Tinder Profile Scanner
+
+## 📘 Primary Rules Document
+
+**All development rules and guidelines are maintained in AGENTS.md**
+
+Please read and follow: [AGENTS.md](./AGENTS.md)
+
+## Quick Reference
+
+### Critical Rules (NEVER BREAK):
+
+❌ **NEVER USE:**
+- `interface` (use `type` instead)
+- `any` type (use proper types)
+- `function` keyword (use arrow functions)
+- Fake/invented DOM selectors (always verify real selectors)
+
+✅ **ALWAYS USE:**
+- TypeScript `type` declarations
+- Arrow functions `() => {}`
+- `<script setup>` syntax in Vue
+- Functional programming patterns
+- Real, verified DOM selectors
+
+### Architecture
+- Feature-Sliced Design (FSD)
+- Vue 3 Composition API only
+- Tailwind CSS for styling
+- Pinia for state management
+
+### Key File Locations
+- Entities: `src/entities/`
+- Features: `src/features/`
+- Components: `src/components/`
+- Composables: `src/composables/`
+- Stores: `src/stores/`
+
+---
+
+For complete guidelines, examples, and best practices, see **[AGENTS.md](./AGENTS.md)**

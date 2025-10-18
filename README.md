@@ -157,6 +157,8 @@ function handleClick() {
 - Vue 3 Composition API (`<script setup>`)
 - File-based routing and auto-imports
 
+**📘 For detailed coding guidelines and AI agent rules, see [AGENTS.md](./AGENTS.md)**
+
 ---
 
 ## 🙏 Support
