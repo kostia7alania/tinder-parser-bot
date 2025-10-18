@@ -1,7 +1,7 @@
 import { User } from "../types"
 
 export const useUsersStore = defineStore("users", () => {
-  const { data: users } = useBrowserSyncStorage<User[]>("users", [])
+  const { data: users } = useBrowserLocalStorage<User[]>("users", [])
 
   const checkIsUserAdded = (user: User) => {
     return users.value.find(
